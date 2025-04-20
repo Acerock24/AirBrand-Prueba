@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso AirBrand</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="slides-container">
+    <!-- Slide 1 -->
+    <section id="slide1" class="slide active" style="background-image: url('assets/MainPage.png');">
+      <video id="slide1-video" src="assets/onboarding.mp4" autoplay muted controls></video>
+    
+      <div class="button-info">
+        <span class="video-hint">To activate the button, you must complete the video</span>
+        <button id="next-1" class="btn next" disabled>Next</button>
+      </div>
+    </section>
+
+    <!-- Slide 2 -->
+    <section id="slide2" class="slide" style="background-image: url('assets/HowIsAirBrand.png');">
+      <div class="button-group">
+        <button class="btn back" data-target="slide1">Back</button>
+        <button class="btn next" data-target="slide3">Next</button>
+      </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section id="slide3" class="slide" style="background-image: url('assets/LuxurySpacesAndComfort.png');">
+      <div class="button-group">
+        <button class="btn back" data-target="slide2">Back</button>
+        <button class="btn next" data-target="slide4">Next</button>
+      </div>
+    </section>
+
+    <!-- Slide 4 -->
+    <section id="slide4" class="slide" style="background-image: url('assets/LFidelMilesLoyaltyProgram.png');">
+      <div class="button-group">
+        <button class="btn back" data-target="slide3">Back</button>
+        <button class="btn next" data-target="slide5">Next</button>
+      </div>
+    </section>
+
+    <!-- Slide 5 -->
+    <section id="slide5" class="slide" style="background-image: url('assets/AirLuxeVIPSection.png');">
+      <div class="button-group">
+        <button class="btn back" data-target="slide4">Back</button>
+        <button class="btn next" data-target="slide6">Quiz</button>
+      </div>
+    </section>
+
+<!-- Slide 6 / Quiz -->
+<section id="slide6" class="slide" style="background-image: url('assets/Quiz.png');">
+
+  <div id="quiz-container">
+    <div class="options horizontal">
+      <label><input type="radio" name="quiz" value="a"> a) Ticket discounts</label>
+      <label><input type="radio" name="quiz" value="b" data-correct="true"> b) Upgrades and exclusive benefits</label>
+      <label><input type="radio" name="quiz" value="c"> c) Access to exclusive events</label>
+    </div>
+  </div>
+
+  <!-- ✅ Botones posicionados como en los otros slides -->
+  <div class="button-group">
+    <button class="btn back" data-target="slide5">Back</button>
+    <button id="submit-quiz" class="btn submit">Submit</button>
+  </div>
+</section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
